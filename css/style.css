@@ -13,6 +13,8 @@ ul {
 }
 
 .header {
+  max-width: 1440px;
+  margin: 0 auto;
   height: 70px;
   background-color: #FFFFFF;
   padding: 20px 100px;
@@ -64,6 +66,8 @@ ul {
 }
 
 .section {
+  max-width: 1440px;
+  margin: 0 auto;
   height: 850px;
 }
 
@@ -121,6 +125,8 @@ ul {
 }
 
 .description {
+  max-width: 1440px;
+  margin: 0 auto;
   height: 850px;
   position: relative;
 }
@@ -199,7 +205,13 @@ ul {
   cursor: pointer;
 }
 
+.collection {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .collection__header {
+  max-width: 1440px;
   font-family: MADE Mirage;
   font-style: normal;
   font-weight: 500;
@@ -216,6 +228,7 @@ ul {
 .collection__list {
   margin-left: 206px;
   margin-right: 206px;
+  max-width: 1029px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -279,6 +292,7 @@ ul {
   color: #FFFFFF;
   position: relative;
   padding-right: 20px;
+  cursor: pointer;
 }
 
 .collection__item__details__btn::after {
@@ -301,6 +315,8 @@ ul {
 
 .values {
   height: 850px;
+  max-width: 1440px;
+  margin: 0 auto;
   position: relative;
   margin-bottom: 50px;
 }
@@ -355,6 +371,8 @@ ul {
 
 .difference {
   height: 850px;
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 100px;
   position: relative;
 }
@@ -462,6 +480,8 @@ ul {
 }
 
 .advantages {
+  max-width: 1440px;
+  margin: 0 auto;
   height: 850px;
   position: relative;
   padding-top: 150px;
@@ -529,6 +549,8 @@ ul {
 }
 
 .shopping {
+  max-width: 1440px;
+  margin: 0 auto;
   height: 410px;
   padding-top: 150px;
 }
@@ -581,6 +603,8 @@ ul {
 }
 
 .sets {
+  max-width: 1440px;
+  margin: 0 auto;
   height: 700px;
   margin-top: 155px;
   position: relative;
@@ -635,9 +659,9 @@ ul {
 .sets__bg {
   background-image: url("../img/bg-sets.png");
   background-position-x: center;
-  background-size: contain;
+  background-size: cover;
   position: absolute;
-  min-width: 1440px;
+  min-width: 100%;
   height: 526px;
   opacity: 0.5;
   top: 195px;

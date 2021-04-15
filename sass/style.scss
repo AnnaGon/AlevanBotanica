@@ -15,7 +15,8 @@ ul{
 
 // HEADER
 .header{
-    
+    max-width: 1440px;
+    margin: 0 auto;
     height: 70px;
     background-color: #FFFFFF;
     padding: 20px 100px;
@@ -65,6 +66,8 @@ ul{
 // MAIN SECTION
 
 .section{
+    max-width: 1440px;
+    margin: 0 auto;
     height: 850px;
     // position: relative;
     
@@ -136,6 +139,8 @@ ul{
 
 .description{
     // text-transform: uppercase;
+    max-width: 1440px;
+    margin: 0 auto;
     height: 850px;
     position: relative;
     
@@ -231,9 +236,11 @@ ul{
 // COLLECTION
 
 .collection{
+    max-width: 1440px;
+    margin: 0 auto;
     
     &__header{
-        
+        max-width: 1440px;
         font-family: MADE Mirage;
         font-style: normal;
         font-weight: 500;
@@ -248,12 +255,13 @@ ul{
         
         margin-top: 70px;
         margin-left: 206px; 
+        
     }
     
     &__list{
         margin-left: 206px;
         margin-right: 206px;
-        
+        max-width: 1029px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 30px;
@@ -263,7 +271,6 @@ ul{
     
     &__item{
         margin-bottom: 33px;
-        
         
         &__box{
             width: 499px;
@@ -320,6 +327,7 @@ ul{
                 color: #FFFFFF;
                 position: relative;
                 padding-right: 20px;
+                cursor: pointer;
                 
                 
                 &::after{
@@ -350,7 +358,8 @@ ul{
 
 .values{
     height: 850px;
-    // padding-top: 180px;
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
     margin-bottom: 50px;
     
@@ -416,6 +425,8 @@ ul{
 
 .difference{
     height: 850px;
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 100px;
     position: relative;
     
@@ -541,6 +552,8 @@ ul{
 // ADVANTEGES
 
 .advantages{
+    max-width: 1440px;
+    margin: 0 auto;
     height: 850px;
     position: relative;
     padding-top: 150px;
@@ -611,6 +624,8 @@ ul{
 
 // Shipping & Returns
 .shopping{
+    max-width: 1440px;
+    margin: 0 auto;
     height: 410px;
     padding-top: 150px;
     
@@ -666,11 +681,15 @@ ul{
 // BEST SETS 
 
 .sets{
+    max-width: 1440px;
+    margin: 0 auto;
     height: 700px;
     margin-top: 155px;
     position: relative;
     display: flex;
     overflow: hidden;
+    
+    
     
     &__box{
         margin-top: 110px;
@@ -720,9 +739,9 @@ ul{
     &__bg{
         background-image: url('../img/bg-sets.png');
         background-position-x: center;
-        background-size: contain;
+        background-size: cover;
         position: absolute;
-        min-width: 1440px;
+        min-width: 100%;
         height: 526px;
         opacity: 0.5;        
         top: 195px;
@@ -747,6 +766,8 @@ ul{
 
 
 .footer{
+    // max-width: 1440px;
+    // margin: 0 auto;
     height: 500px;
     padding: 105px 210px 70px 206px;
     background: #1B1E23;
