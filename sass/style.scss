@@ -3,7 +3,7 @@
 }
 
 .container{
-    max-width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
     
 }
@@ -105,7 +105,7 @@ ul{
         position: absolute;
         width: 182px;
         height: 1px;
-        left: 675px;
+        right: 590px;
         top: 620px;
         
         background: #000000;
@@ -115,7 +115,8 @@ ul{
         position: absolute;
         width: 182px;
         height: 65px;
-        left: 900px;
+        // left: 900px;
+        right: 355px;
         top: 585px;
         background-color: #FFFFFF;
         font-family: Poppins;
@@ -718,10 +719,10 @@ ul{
     
     &__bg{
         background-image: url('../img/bg-sets.png');
-        background-position: center;
-        background-size: auto;
+        background-position-x: center;
+        background-size: contain;
         position: absolute;
-        width: 1440px;
+        min-width: 1440px;
         height: 526px;
         opacity: 0.5;        
         top: 195px;
