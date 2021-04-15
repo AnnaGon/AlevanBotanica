@@ -1,0 +1,891 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+
+// HEADER
+.header{
+    
+    height: 70px;
+    background-color: #FFFFFF;
+    padding: 20px 100px;
+    
+    
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &__list{
+        display: flex;
+        padding-top: 5px;
+        
+        &__link{
+            text-decoration: none;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            
+            color: #000000;
+            
+        }
+        
+        &__logo{
+            height: 34px;
+        }
+        &__item{
+            padding-right: 58px;
+            cursor: pointer;
+            
+            &:last-child{
+                padding-right: 0px;
+            }  
+        }
+        &__icon{
+            height: 41px;
+            width: 33px;
+            margin-top: -15px;
+            
+        }
+    }
+}
+
+// MAIN SECTION
+
+.section{
+    height: 850px;
+    // position: relative;
+    
+}
+.section__left{
+    position: relative;
+    
+    
+    &__img--bg{
+        position: absolute;
+        left: -100px;
+        top: -15px;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    
+    &__img{
+        position: absolute;
+        left: 170px;
+        top: 118px;
+        
+    }
+}
+
+.section__right{
+    // height: 900px;
+    position: relative;
+    
+    &__main{
+        position: absolute;
+        // left: 680px;
+        // top: 329px;
+        right: 255px;
+        top: 310px;
+    }
+    
+    &__line{
+        position: absolute;
+        width: 182px;
+        height: 1px;
+        left: 675px;
+        top: 620px;
+        
+        background: #000000;
+    }
+    
+    &__btn{
+        position: absolute;
+        width: 182px;
+        height: 65px;
+        left: 900px;
+        top: 585px;
+        background-color: #FFFFFF;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        
+        color: #000000;
+        border: 0.5px solid #000000;
+        
+        cursor: pointer;
+        
+    }
+}
+
+// DESCRIPTION
+
+.description{
+    // text-transform: uppercase;
+    height: 850px;
+    position: relative;
+    
+    &__inner{
+        // margin: 0;
+        margin-left: 206px;     
+    }
+    
+    &__title{
+        width: 313px;
+        text-transform: uppercase;
+        font-family: MADE Mirage;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 114.9%;
+        /* or 41px */
+        
+        letter-spacing: 0.04em;        
+        color: #000000;
+        
+        padding-top: 270px; 
+        
+    }
+    
+    &__text{
+        width: 393px;
+        height: 166px;
+        left: 206px;
+        top: 1306px;
+        
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        
+        color: #000000;
+        
+        margin-top: 40px;
+        
+    }
+    
+    &__img1 {
+        background-image: url('../img/section/img1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+        background-position-y: center;
+        width: 393px;
+        height: 596px;
+        left: 735px;
+        top: 105px;
+        position: absolute;
+        
+    }
+    &__img2{
+        background-image: url('../img/section/img2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+        background-position-y: center;
+        width: 330px;
+        height: 495px;
+        position: absolute;
+        left: 1010px;
+        top: 290px;
+        z-index: -1;
+        // opacity: 0.5;
+        
+    }
+    
+    &__btn{
+        margin-top: 70px;
+        border: none;  
+        background-color: transparent; 
+        border-bottom: 1px solid #000000;
+        ;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;        
+        text-transform: uppercase;
+        
+        color: #000000;
+        
+        cursor: pointer;
+        
+    }
+}
+
+// COLLECTION
+
+.collection{
+    
+    &__header{
+        
+        font-family: MADE Mirage;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 114.9%;
+        /* or 41px */
+        
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+        color: #000000;
+        
+        margin-top: 70px;
+        margin-left: 206px; 
+    }
+    
+    &__list{
+        margin-left: 206px;
+        margin-right: 206px;
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        padding-top: 60px;
+        
+    }
+    
+    &__item{
+        margin-bottom: 33px;
+        
+        
+        &__box{
+            width: 499px;
+            height: 359px;
+            background: #F8F8F8;
+            
+            
+        }
+        
+        &__details{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            
+            &__price{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 47px;
+                
+                text-transform: uppercase;
+                
+                color: #000000;
+            }
+            
+            &__span{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                /* identical to box height */
+                
+                text-transform: uppercase;
+                
+                color: #000000;
+                
+            }
+            
+            &__btn{
+                width: 145px;
+                height: 43px;
+                border: none;
+                background: #33896F;
+                
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;                
+                text-transform: uppercase;
+                
+                color: #FFFFFF;
+                position: relative;
+                padding-right: 20px;
+                
+                
+                &::after{
+                    content: '';
+                    background-image: url('../img/collection/arrow.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    text-align: center;
+                    background-position-y: center;
+                    
+                    position: absolute;
+                    width: 14px;
+                    height: 21px;
+                    left: 110px; 
+                    top: 10px;
+                }
+                
+            }
+        }
+        
+        &__img{
+            margin: 27px 290px 31px 50px;
+        }
+    }
+}
+
+// CORE VALUES
+
+.values{
+    height: 850px;
+    // padding-top: 180px;
+    position: relative;
+    margin-bottom: 50px;
+    
+    &__bg{
+        background-image: url('../img/values/bg.png');
+        width: 100%;
+        height: 1023px;
+        background-repeat: no-repeat;
+        // text-align: center;
+        background-position-y: center;
+        z-index: -1;
+        position: absolute;
+        
+    }
+    
+    &__text{
+        width: 635px;
+        height: 419px;
+        background: #F8F8F8;
+        position: absolute;
+        
+        left: 705px;
+        top: 300px;
+        
+        &__header{
+            font-family: MADE Mirage;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 114.9%;            
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            
+            color: #000000;
+            
+            margin-top: 80px;
+            margin-left: 105px;
+            
+        }
+        
+        &__item{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            
+            color: #000000;
+            
+            margin-top: 40px;
+            margin-left: 105px;
+            
+        }
+        
+        &__number{
+            color: #33896F;
+            margin-right: 10px;
+        }
+    }
+}
+
+// DIFFERENCE
+
+.difference{
+    height: 850px;
+    padding-top: 100px;
+    position: relative;
+    
+    &__bg1{
+        background-image: url('../img/values/img1.png');
+        width: 329px;
+        height: 494px;
+        background-repeat: no-repeat;
+        // text-align: center;
+        background-position-y: center;
+        background-size: 100%;
+        z-index: -1;
+        position: absolute;
+        
+        left: 100px;
+        top: 300px;
+    }
+    
+    &__bg2{
+        background-image: url('../img/values/img2.png');
+        width: 393px;
+        height:  596px;
+        background-repeat: no-repeat;
+        // text-align: center;
+        // background-position-y: center;
+        z-index: -1;
+        position: absolute;
+        
+        left: 300px;
+        top: 150px;
+    }
+    
+    &__text{
+        position: absolute;
+        right: 238px;
+        top: 200px;
+        
+        &__header{
+            font-family: MADE Mirage;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 114.9%;
+            width: 361px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            
+            color: #000000;
+            
+        }
+        
+        &__description{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            width: 393px;
+            
+            color: #000000;
+            margin-top: 40px;
+        }
+        &__btn{
+            margin-top: 70px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+            
+            text-transform: uppercase;
+            color: #000000;
+            border: none;  
+            background-color: transparent; 
+            border-bottom: 1px solid #000000;
+            cursor: pointer;
+        }
+    }
+}
+
+// COLLECTION SECOND PART
+
+// BG TEXT
+
+.text{
+    height: 850px;
+    padding-top: 100px;
+    position: relative;
+    
+    &__description{
+        margin: 0  auto;
+        margin-top: 250px;
+        width: 1031px;
+        font-family: MADE Mirage;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 157.4%;
+        /* or 57px */
+        
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+        color: #000000;
+    }
+    
+    &__bg--img{
+        background-image: url('../img/bg_green.png');
+        width: 605px;
+        height: 628px;
+        background-repeat: no-repeat;
+        // text-align: center;
+        background-position-y: center;
+        z-index: -1;
+        position: absolute;
+        
+        left: 411px;
+        top: 189px;
+    } 
+}
+
+// ADVANTEGES
+
+.advantages{
+    height: 850px;
+    position: relative;
+    padding-top: 150px;
+    
+    &__box{
+        width: 605px;
+        background: #F8F8F8;
+        position: absolute;
+        left: 100px;
+        top: 350px;
+        width: 605px;
+        height: 301px;
+        
+        &__header{
+            font-family: MADE Mirage;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 114.9%;
+            /* or 41px */
+            
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            
+            color: #000000;
+            margin-top: 60px;
+            margin-left: 106px;
+        }
+        
+        &__details{
+            margin-left: 106px;
+            margin-right: 140px;
+            
+            display: flex;
+            justify-content: space-between;
+            
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            
+            color: #000000;
+            
+            &__item{
+                margin-top: 40px;
+                
+            }
+        }
+        
+        &__number{
+            color: #33896F;
+            margin-right: 10px;
+        }
+    }
+    &__bg{
+        background-image: url('../img/advanteges.png');
+        width: 1023px;
+        height: 667px;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        z-index: -1;
+        position: absolute;
+        
+        left: 418px;
+    }
+}
+
+// Shipping & Returns
+.shopping{
+    height: 410px;
+    padding-top: 150px;
+    
+    &__header{
+        font-family: MADE Mirage;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 114.9%;        
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+        color: #000000;
+        margin-left: 206px;
+    }
+    
+    &__container{
+        display: flex;
+        margin: 50px 160px 155px 170px;
+    }
+    
+    &__box{
+        width: 345px;
+        background: #F8F8F8;
+        margin-right: 34px;
+        padding: 25px 28px 30px 30px;
+        
+        &__header{
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;            
+            
+            color: #33896F;
+        }
+        
+        &__text{
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            color: #000000;
+            margin-top: 20px;
+        }
+        
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    
+}
+
+// BEST SETS 
+
+.sets{
+    height: 700px;
+    margin-top: 155px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    
+    &__box{
+        margin-top: 110px;
+        margin-left: 206px;
+        width: 290px;
+        
+        &__header{
+            font-family: MADE Mirage;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 114.9%;            
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            
+            color: #000000;
+        }
+        
+        &__text{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            color: #000000;
+            
+            margin-top: 40px;
+        }
+        
+        &__btn{
+            margin-top: 70px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+            
+            text-transform: uppercase;
+            color: #000000;
+            border: none;  
+            background-color: transparent; 
+            border-bottom: 1px solid #000000;
+            cursor: pointer;
+        }
+    }
+    
+    &__bg{
+        background-image: url('../img/bg-sets.png');
+        background-position: center;
+        background-size: auto;
+        position: absolute;
+        width: 1440px;
+        height: 526px;
+        opacity: 0.5;        
+        top: 195px;
+        z-index: -1;
+    }
+    
+    &__imgs{
+        
+        position: absolute;
+        left: 629px;
+        width: 1020px;
+        
+        &__item{
+            
+            margin-right: 40px;
+            
+        }
+    }
+    
+}
+// FOOTER
+
+
+.footer{
+    height: 500px;
+    padding: 105px 210px 70px 206px;
+    background: #1B1E23;
+    
+    &__inner{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+    &__left{
+        
+        &__text{
+            width: 317px;
+            
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 155%;            
+            letter-spacing: 0.04em;
+            
+            color: #FFFFFF;
+            
+        }
+        
+        &__input{
+            margin-top: 30px;
+            
+            &__email{
+                width: 287px;
+                height: 49px;
+                border: 0.5px solid #FFFFFF;
+                box-sizing: border-box;
+                
+                padding: 15px 187px 15px 12px;
+                font-family: Poppins;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 18px;
+                
+                letter-spacing: 0.005em;
+                text-transform: uppercase;
+                
+                color: #FFFFFF;
+                background: #1B1E23;
+                
+                
+            }
+        }
+        
+        &__btn{
+            width: 106px;
+            height: 49px;
+            
+            border: 1px solid #FFFFFF;
+            background: #1B1E23;
+            font-size: 12px;
+            line-height: 18px;            
+            letter-spacing: 0.005em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        
+        &__media{
+            margin-top: 30px;
+            
+            &__item{
+                margin-right: 21px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                
+                
+            }
+        }
+        &__copyright{
+            
+            margin-top: 130px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 155%;            
+            letter-spacing: 0.04em;
+            
+            color: #FFFFFF;
+            cursor: pointer;
+            
+        }
+    }
+    
+    &__right{
+        display: flex;
+        
+        &__box{
+            margin-right: 90px;        
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;            
+            letter-spacing: 0.005em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            
+            &:last-child{
+                margin-right: 0px;
+            }
+            
+            &__link {
+                text-decoration: none;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 18px;            
+                letter-spacing: 0.005em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            
+            &__item{
+                margin-bottom: 25px;
+                text-decoration: none;
+                
+                &:first-child{
+                    margin-bottom: 30px;
+                }
+                
+                
+                
+            }  
+        }
+        
+        
+    }
+    
+    
+}
+
